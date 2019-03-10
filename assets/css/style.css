@@ -16,6 +16,7 @@ main {
     border: solid 1px #dddddd;
     padding: 15px;
     margin: auto;
+    margin-bottom: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background-color: #ffffff;
-    border-bottom: solid 1.5px #dddddd;
+    border-bottom: solid 1.5px #cccccc;
+    margin-bottom: 15px;
 }
 
 .header-box{
@@ -71,13 +73,18 @@ li a{
 
 footer {
     text-align: center;
-    padding: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     background-color: #666666;
     color: #ffffff;
     border-top: solid 8px #4aaaa5;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer.p-footer {
+    position: relative;
 }
 
 #profile-pic{
@@ -103,8 +110,8 @@ footer {
     float: left;
     width: 200px;
     height: 175px;
-    background-image: url("http://lorempixel.com/200/200/");
-    margin: 5px 50px 5px 0px;
+    /*background-image: url("http://lorempixel.com/200/200/");*/
+    margin: 15px 50px 15px 0px;
     text-align: center;
     position: relative;
 }
@@ -120,6 +127,26 @@ footer {
     width: 100%;
     margin-bottom: 15px;
     padding: 15px 0px;
+}
+
+#proj1{
+    background-image: url("../images/proj1.jpg");
+}
+
+#proj2{
+    background-image: url("../images/proj2.jpg");
+}
+
+#proj3{
+    background-image: url("../images/proj3.jpg");
+}
+
+#proj4{
+    background-image: url("../images/proj4.jpg");
+}
+
+#proj5{
+    background-image: url("../images/proj5.jpg");
 }
 
 form p{

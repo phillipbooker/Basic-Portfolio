@@ -2,10 +2,11 @@
     box-sizing: border-box;
 }
 
+/*'margin: auto in body and main allow content to be centered*/
 body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    background-color: #4aaaa5;
+    /*background-color: #4aaaa5;*/
     background-image: url("../images/houndstooth-pattern.png");
     margin: auto;
 }
@@ -35,6 +36,7 @@ header {
     margin: auto;
 }
 
+/*float left and float right allow them to sit on the left and right edges of the header*/
 header h1{
     float: left;
     background-color: #4aaaa5;
@@ -49,12 +51,14 @@ header nav{
     margin-top: 15px;
 }
 
+/*clearfix hack for header*/
 header::after{
     display: block;
     content: "";
     clear: both;
 }
 
+/*allows links in list inside the nav to sit next to each other*/
 ul li{
     display: inline-block;
     text-align: center;
@@ -71,6 +75,7 @@ li a{
     padding-bottom: 15px;
 }
 
+/*position: fixed allows the footer to stay at the bottom of the page.*/
 footer {
     text-align: center;
     padding-top: 30px;
@@ -83,6 +88,7 @@ footer {
     width: 100%;
 }
 
+/*The portfolio footer position is made relative so that it can be placed after all of the content*/
 footer.p-footer {
     position: relative;
 }
@@ -116,7 +122,7 @@ footer.p-footer {
     position: relative;
 }
 
-/*position absolute only works when parent position is relative*/
+/*position absolute only works when parent position (.project) is relative*/
 .project a{
     text-decoration: none;
     color: #ffffff;
@@ -157,6 +163,7 @@ input[type="text"]{
     width: 100%;
 }
 
+/*max-width prevents text box from extending outside of main content area*/
 textarea{
     width: 100%;
     max-width: 100%;
